@@ -11,4 +11,9 @@ router.get "/", (req, res) ->
     title: "Express"
 
   return
+router.get "/policy.html", (req, res) ->
+  res.render "policy",
+    title: "Express"
+
+  return
 module.exports = router

@@ -24,6 +24,7 @@
     "express-session": "",
     "properties": "",
     "coffee-script": "",
+    "marked": "",
     "string": "^1.8.1"
   }
 }
