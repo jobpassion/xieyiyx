@@ -16,4 +16,9 @@ router.get "/policy.html", (req, res) ->
     title: "Express"
 
   return
+router.get "/contact.html", (req, res) ->
+  res.render "contact",
+    title: "Express"
+
+  return
 module.exports = router

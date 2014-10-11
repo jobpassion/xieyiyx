@@ -1,8 +1,11 @@
 doctype html
 html
   head
-    title= '简单五笔'
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
+    title
+      block title
+      | 简单五笔
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    //link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css')
     //link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css')
 
     //
@@ -34,6 +37,8 @@ html
                   a(href='/') 主页
                 li#policy
                   a(href='/policy.html') 用户隐私声明
+                li#contact
+                  a(href='/contact.html') 联系我们
     #myCarousel.carousel.slide(data-ride='carousel')
       //
          Indicators 
@@ -86,5 +91,6 @@ html
           a(href='#') Privacy
           | ·
           a(href='#') Terms
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
+    script(src='/js/bootstrap.min.js')
+    //script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js')
     script(src='/js/docs.min.js')
