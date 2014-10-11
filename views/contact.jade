@@ -1,0 +1,8 @@
+extends layout
+block title
+  | 联系我们-
+
+block content
+  include:md ../md/contact.md
+  script.
+    $('#contact').addClass('active');
