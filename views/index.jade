@@ -1,0 +1,98 @@
+extends layout
+
+block content
+    //
+       Three columns of text below the carousel 
+    .row
+      .col-lg-4
+        //img.img-circle(src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+        img.img-circle(src='/images/circle1.jpg', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+        h2 简单高效
+        p
+          | 简单五笔的清爽界面，极速的键盘响应.
+        p
+          | 支持五笔拼音混输，帮你提升打字效率.
+        p
+          a.btn.btn-default(href='#rapid', role='button') 查看详细 »
+      //
+         /.col-lg-4 
+      .col-lg-4
+        img.img-circle(src='/images/circle2.jpg', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+        h2 界面简洁
+        p
+          | 简约之风大行其道，带给用户清爽界面.
+        p
+          | 支持更换主题，满足你对风格喜好需求.
+        p
+          a.btn.btn-default(href='#simple', role='button') 查看详细 »
+      //
+         /.col-lg-4 
+      .col-lg-4
+        img.img-circle(src='/images/circle3.jpg', alt='Generic placeholder image', style='width: 140px; height: 140px;')
+        h2 无联网需求
+        p
+          | 降低用户流量消耗，不上传用户隐私.
+        p
+          | 用户可根据自身需求，关闭输入法的网络权限.
+        p
+          a.btn.btn-default(href='#privacy', role='button') 查看详细 »
+      //
+         /.col-lg-4 
+    //
+       /.row 
+    //
+       START THE FEATURETTES 
+    hr.featurette-divider
+    .row.featurette#rapid
+      .col-md-7
+        h2.featurette-heading
+          | 简单高效.
+          span.text-muted 应快捷需求而生.
+        p.lead
+          | &emsp;&emsp;默认支持五笔拼音混合输入，用户可根据自身需求，打开或关闭拼音功能。
+        p.lead
+          | &emsp;&emsp;开发人员倾尽全力，将输入法运行效率优化到极致。简单五笔简约的风格，使得用户非常容易上手，不需要复杂配置就可以获得很好的使用体验。
+      .col-md-5
+        //img.featurette-image.img-responsive(data-src='holder.js/500x500/auto', alt='Generic placeholder image')
+        img.featurette-image.img-responsive(src='/images/body1.jpg', alt='Generic placeholder image')
+    hr.featurette-divider
+    .row.featurette#simple
+      .col-md-5
+        img.featurette-image.img-responsive(src='/images/body2.jpg', alt='Generic placeholder image')
+      .col-md-7
+        h2.featurette-heading
+          | 界面简洁.
+          span.text-muted 尽可能将更多的空间留给手指.
+        p.lead
+          | &emsp;&emsp;简单五笔自带多种主题风格，用户可根据自身需求，设置简单五笔使用的主题，贴合用户需求。
+        p.lead
+          | &emsp;&emsp;简单五笔使用简约的风格来设计用户界面，界面布局符合用户惯有的使用习惯，与系统原有输入法键盘布局一致。我们在为用户提供更多功能使用的同时，尽量不让用户对界面产生臃肿的感受，一切简约至上。简约而不简单。
+    hr.featurette-divider
+    .row.featurette#privacy
+      .col-md-7
+        h2.featurette-heading
+          | 无联网需求.
+          span.text-muted 保护用户隐私.
+        p.lead
+          | &emsp;&emsp;简单五笔不强制向用户索取联网权限，不过，推荐用户开启
+          code
+            通用→键盘→简单五笔→允许网络权限
+          。这样做以后，用户才可以使用简单五笔的任何配置功能。
+          a(href='#whyopenaccess')
+            了解为什么
+        p.lead
+          | &emsp;&emsp;简单五笔不强制向用户索取联网权限，这是用户隐私最可靠的保障。在没有网络联接的场景下，简单五笔在使用了本地短时缓存的基础上，将用户最可能希望的词组显示在选词栏，让用户打字更高效。
+      .col-md-5
+        img.featurette-image.img-responsive(src='/images/body3.jpg', alt='Generic placeholder image')
+    hr.featurette-divider
+    .row.featurette#whyopenaccess
+      h2
+        | 为什么推荐打开允许网络访问？
+      p
+        | &emsp;&emsp;根据苹果ios开发文档：开启允许完全访问的键盘扩展，才具备网络访问和共享存储数据的功能。如果需要使用简单五笔的配置功能，需要开启完全访问全权限，用户在配置中心所做的任何配置才可以同步到键盘子进程中，进而依据不同配置区别响应。例如：响应不同的主题、响应是否启用五笔拼音混输等。简单五笔承诺：在允许完全访问的前提下，不上传用户隐私。
+        a(href='/policy.html')
+          查看详细
+    //
+       /END THE FEATURETTES 
+    script.
+      $('#index').addClass('active');

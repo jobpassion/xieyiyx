@@ -1,0 +1,30 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www.js"
+  },
+  "dependencies": {
+    "express": "~4.0.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "",
+    "body-parser": "~1.0.0",
+    "mysql": "",
+    "log4js": "",
+    "generic-pool": "",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0",
+    "less-middleware": "0.1.15",
+    "dateutil": "",
+    "util": "",
+    "q": "",
+    "async": "",
+    "express-session": "",
+    "properties": "",
+    "coffee-script": "",
+    "marked": "",
+    "string": "^1.8.1"
+  }
+}

@@ -1,0 +1,8 @@
+extends layout
+block title
+  | 用户隐私声明-
+
+block content
+  include:md ../md/policy.md
+  script.
+    $('#policy').addClass('active');
