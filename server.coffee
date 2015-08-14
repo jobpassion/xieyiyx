@@ -1,5 +1,5 @@
 debug = require("debug")("my-application")
-app = require("../app")
+app = require("./app")
 app.set "port", process.env.OPENSHIFT_NODEJS_PORT or 8080
 ipaddress = process.env.OPENSHIFT_NODEJS_IP
 if (typeof ipaddress == "undefined") 
